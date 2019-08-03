@@ -54,7 +54,7 @@ int main () {
 
     init_microcode();
 
-    FILE *f = fopen ("microcode.txt", "w");
+    FILE *f = fopen ("microcode.bin", "w");
     fwrite(microcode, 1, sizeof(microcode), f);
     fclose(f);
 
